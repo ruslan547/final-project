@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --gradient-light-color: #4ad7be;
+  --gradient-durk-color: #49d6da;
+  --gradient-primary-color: #df4565;
+  --base-light-color: #fff;
+  --base-durk-color: #333333;
+  --primary-light-color: #f2f2f2;
+  --primary-durk-color: #4f4f4f;
+  --toggle-btn-durk-color: #1b1b1b;
+  --toggle-durk-color: #505050;
+  --bg-range-color: rgba(189, 189, 189, .57);
+  --shadow-toggle-light: 2px 4px 15px rgba(6, 12, 70, 0.15);
+  --shadow-toggle-durk: 2px 4px 15px rgba(230, 230, 230, 0.15);
+  --shadow-range: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  --arrow-durk-color: #828282;
+  --shdow-card: rgba(0, 0, 0, .5);
+  --shadow-testim-card: 2px 4px 15px rgba(6, 12, 70, 0.1);
+  --bg-form: #bdbdbd;
+  --shadow-header: 0px 4px 8px rgba(44, 101, 77, 0.08);
+  --bg-points: #C4C4C4;
+  --dirty-color: #3b3b3b;
+  --usual-map: url(../../assets/images/map.svg);
+  --usual-durk-map: url(../../assets/images/durk-map.svg);
+  --mini-map: url(../../assets/images/mini-map.png);
+  --mini-durk-map: url(../../assets/images/mini-durk-map.svg);
+  --tablet-map: url(../../assets/images/tablet-map.svg);
+  --tablet-durk-map: url(../../assets/images/tablet-durk-map.svg);
+  --mobil-map: url(../../assets/images/mobil-map.svg);
+  --mobil-durk-map: url(../../assets/images/mobil-durk-map.svg);
+  --main-gradient: linear-gradient(to right, var(--gradient-light-color), var(--gradient-durk-color));
+  --selected-gradient: linear-gradient(to right, var(--gradient-light-color), var(--gradient-primary-color));
+  --bg-first: var(--base-light-color);
+  --bg-second: var(--primary-light-color);
+  --fg-header: var(--base-durk-color);
+  --bg-theme-toggle-btn: var(--base-light-color);
+  --bg-theme-toggle: var(--primary-light-color);
+  --shadow-theme-toggle-btn: var(--shadow-toggle-light);
+  --fg-title: var(--base-durk-color);
+  --fg-text: var(--primary-durk-color);
+  --fg-fraction: var(--base-durk-color);
+  --bg-thumb: var(--base-durk-color);
+  --bg-arrow: var(--arrow-durk-color);
+  --fg-pay-instruct: var(--primary-durk-color);
+  --bg-border-avatar: var(--primary-durk-color);
+  --bg-map-card: var(--base-light-color);
+  --fg-map-card: var(--base-durk-color);
+  --bg-testimoial-card: var(--base-light-color);
+  --bg-usual-map-screen: var(--usual-map);
+  --bg-mini-map-screen: var(--mini-map);
+  --bg-tablet-map-screen: var(--tablet-map);
+  --bg-mobil-map-screen: var(--mobil-map);
+}
+
+:root[theme='durk'] {
+  --bg-first: var(--base-durk-color);
+  --bg-second: var(--primary-durk-color);
+  --fg-header: var(--base-light-color);
+  --bg-theme-toggle-btn: var(--toggle-btn-durk-color);
+  --bg-theme-toggle: var(--toggle-durk-color);
+  --shadow-theme-toggle-btn: var(--shadow-toggle-durk);
+  --fg-title: var(--base-light-color);
+  --fg-text: var(--base-light-color);
+  --fg-fraction: var(--base-light-color);
+  --bg-thumb: var(--base-light-color);
+  --bg-arrow: var(--base-light-color);
+  --fg-pay-instruct: var(--primary-light-color);
+  --bg-border-avatar: var(--base-light-color);
+  --bg-map-card: var(--base-durk-color);
+  --fg-map-card: var(--base-light-color);
+  --bg-testimoial-card: var(--dirty-color);
+  --bg-usual-map-screen: var(--usual-durk-map);
+  --bg-mini-map-screen: var(--mini-durk-map);
+  --bg-tablet-map-screen: var(--tablet-durk-map);
+  --bg-mobil-map-screen: var(--mobil-durk-map);
+}
