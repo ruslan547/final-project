@@ -1,5 +1,31 @@
 @import url("../../styles.css");
 
+:root {
+  --usual-map: url(../../assets/images/map.svg);
+  --usual-durk-map: url(../../assets/images/durk-map.svg);
+  --mini-map: url(../../assets/images/mini-map.png);
+  --mini-durk-map: url(../../assets/images/mini-durk-map.svg);
+  --tablet-map: url(../../assets/images/tablet-map.svg);
+  --tablet-durk-map: url(../../assets/images/tablet-durk-map.svg);
+  --mobil-map: url(../../assets/images/mobil-map.svg);
+  --mobil-durk-map: url(../../assets/images/mobil-durk-map.svg);
+  --bg-map-card: var(--base-light-color);
+  --fg-map-card: var(--base-durk-color);
+  --bg-usual-map-screen: var(--usual-map);
+  --bg-mini-map-screen: var(--mini-map);
+  --bg-tablet-map-screen: var(--tablet-map);
+  --bg-mobil-map-screen: var(--mobil-map);
+}
+
+:root[theme='durk'] {
+  --bg-map-card: var(--base-durk-color);
+  --fg-map-card: var(--base-light-color);
+  --bg-usual-map-screen: var(--usual-durk-map);
+  --bg-mini-map-screen: var(--mini-durk-map);
+  --bg-tablet-map-screen: var(--tablet-durk-map);
+  --bg-mobil-map-screen: var(--mobil-durk-map);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   position: relative;
