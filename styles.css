@@ -11,6 +11,7 @@
   --base-durk-color: #333333;
   --primary-light-color: #f2f2f2;
   --primary-durk-color: #4f4f4f;
+  --primary-midle-color: #828282;
   --toggle-btn-durk-color: #1b1b1b;
   --toggle-durk-color: #505050;
   --bg-range-color: rgba(189, 189, 189, .57);
@@ -40,6 +41,7 @@
   --fg-pay-instruct: var(--primary-durk-color);
   --bg-border-avatar: var(--primary-durk-color);
   --bg-testimoial-card: var(--base-light-color);
+  --shadow-popap: 0px 4px 24px rgba(0, 0, 0, 0.19);
 }
 
 :root[theme='durk'] {
