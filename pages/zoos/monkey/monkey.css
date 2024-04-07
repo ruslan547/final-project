@@ -1,9 +1,5 @@
 @import url("../../../styles.css");
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
 button, input[type="submit"] {
   cursor: pointer;
   border: none;

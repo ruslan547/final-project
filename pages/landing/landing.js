@@ -1,5 +1,3 @@
-//Theme
-const themeToggle = document.querySelector('.theme-toggle');
 //Banner-slider
 const bannerSliderList = document.querySelector('.banner-slider__list');
 const bannerSliderRange = document.querySelector('.banner-slider__range');
@@ -21,8 +19,6 @@ let leftItem = 0;
 let rightItem;
 let bgTime = getTime();
 
-//Theme
-themeToggle.addEventListener('click', handleThemeToggleClick);
 //Banner-slider
 bannerSliderList.addEventListener('click', handleListClick);
 bannerSliderRange.addEventListener('input', handleBannerSliderRangeInput);
@@ -32,28 +28,7 @@ rightMainSliderArrow.addEventListener('click', handleMainSliderRightArrowClick);
 range.addEventListener('input', handleMainSliderRangeInput);
 window.addEventListener('resize', handleResize);
 
-initTheme();
 initMainSlider();
-
-//Theme
-function handleThemeToggleClick({ target }) {
-  if (target.id === 'toggle') {
-    return;
-  }
-
-  const root = document.documentElement;
-  const attribute = root.getAttribute('theme') === 'durk' ? 'light' : 'durk';
-
-  root.setAttribute('theme', attribute);
-  localStorage.setItem('theme', attribute);
-}
-
-function initTheme() {
-  const theme = localStorage.getItem('theme') ?? 'light';
-
-  document.documentElement.setAttribute('theme', theme);
-  toggle.checked = theme === 'durk';
-}
 
 //banner-slider
 function handleListClick({ target }) {
@@ -367,4 +342,3 @@ function setRange(num) {
 function getTime() {
   return Date.now();
 }
-

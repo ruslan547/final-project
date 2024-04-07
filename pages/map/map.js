@@ -1,7 +1,5 @@
 const SPEED = 500
 
-//Theme
-const themeToggle = document.querySelector('.theme-toggle');
 //slider
 const sliderList = document.querySelector('.slider__list');
 const sliderItems = document.querySelectorAll('.slider__item');
@@ -22,9 +20,6 @@ let leftItem = 0;
 let rightItem;
 let bgTime = getTime();
 
-//Theme
-themeToggle.addEventListener('click', handleThemeToggleClick);
-
 //slider
 leftSliderArrow.addEventListener('click', handleMainSliderLeftArrowClick);
 rightSliderArrow.addEventListener('click', handleMainSliderRightArrowClick);
@@ -33,28 +28,7 @@ window.addEventListener('resize', initSlider);
 sliderList.addEventListener('click', handleSliderListClick);
 mapScreen.addEventListener('click', handleMapScreenClick);
 
-initTheme();
 initSlider();
-
-//Theme
-function handleThemeToggleClick({ target }) {
-  if (target.id === 'toggle') {
-    return;
-  }
-
-  const root = document.documentElement;
-  const attribute = root.getAttribute('theme') === 'durk' ? 'light' : 'durk';
-
-  root.setAttribute('theme', attribute);
-  localStorage.setItem('theme', attribute);
-}
-
-function initTheme() {
-  const theme = localStorage.getItem('theme') ?? 'light';
-
-  document.documentElement.setAttribute('theme', theme);
-  toggle.checked = theme === 'durk';
-}
 
 //slider
 function handleMainSliderLeftArrowClick() {

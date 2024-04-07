@@ -1,7 +1,7 @@
 @import url("../../styles.css");
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-first);
 }
 
 /* Watch button */
@@ -29,13 +29,13 @@ body {
 }
 
 /*Popap*/
-/*TODO delete*/
 .popap-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
+  padding-bottom: 30px;
   box-sizing: border-box;
 }
 
@@ -44,10 +44,10 @@ body {
   height: 795px;
   display: flex;
   box-shadow: var(--shadow-popap);
+  background-color: var(--base-light-color);
 }
 
 @media screen and (max-width: 1199px) {
-
   .popap {
     width: 640px;
     height: 1243px;
@@ -61,7 +61,6 @@ body {
 }
 
 @media screen and (max-width: 639px) {
-
   .popap {
     width: 320px;
     height: 1243px;
