@@ -1,12 +1,8 @@
-//iframes
 const iframes = document.querySelector('.iframes');
-const iframeArr = Array.from(iframes.children);
 const zooScreen = document.querySelector('.zoo__screen');
 
-//iframes
 iframes.addEventListener('click', handleIframesClick);
 
-//iframe
 function handleIframesClick({ target }) {
   const iframesItem = target.parentNode;
   const iframe = document.querySelector('.zoo__iframe');
