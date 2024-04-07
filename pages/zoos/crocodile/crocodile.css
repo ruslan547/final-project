@@ -401,16 +401,6 @@ ul {
   background-color: var(--fg-header);
 }
 
-/*Title*/
-.title {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
-  color: var(--fg-title);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 /*Text*/
 .text {
   font-size: 14px;
@@ -462,7 +452,6 @@ ul {
   width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 @media screen and (max-width: 1919px) {

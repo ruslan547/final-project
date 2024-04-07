@@ -515,14 +515,6 @@ input[type=range]::-moz-range-thumb {
 }
 
 /*Title*/
-.title {
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
-  color: var(--fg-title);
-  margin: 0;
-}
-
 .card-title {
   font-weight: 900;
   font-size: 20px;

@@ -68,3 +68,12 @@ body {
   --bg-border-avatar: var(--base-light-color);
   --bg-testimoial-card: var(--dirty-color);
 }
+
+/*Title*/
+h2 {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--fg-title);
+  margin: 0;
+}
