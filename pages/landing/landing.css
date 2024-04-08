@@ -2705,3 +2705,59 @@ input[type=range]::-moz-range-thumb {
   }
 
 }
+
+/* Table */
+.pets-in-table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg-first);
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 639px) {
+
+  .pets-in-table {
+    padding-bottom: 50px;
+  }
+
+}
+
+table {
+  border-radius: 6px;
+  box-shadow: var(--shadow-testim-card);
+  background-color: var(--bg-testimoial-card);
+}
+
+thead {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--fg-title);
+}
+
+td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.table-links {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 6px;
+}
+
+.table-links__item .donate-link {
+  color: var(--fg-text);
+}
+
+.table-links__item .donate-link:hover,
+.table-links__item .watch-btn:hover {
+  transform: scale(1);
+}
+
+.table-links .donate-link,
+.table-links .watch-btn {
+  height: 16px;
+}
