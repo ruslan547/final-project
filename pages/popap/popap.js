@@ -5,9 +5,11 @@ popupForm.addEventListener('submit', handleDonateClick);
 function handleDonateClick (e) {
   e.preventDefault();
   const formData = new FormData(e.target);
-  console.log(formData.get('toDonate'));
-  console.log(formData.get('animal'));
-  console.log(formData.get('name'));
-  console.log(formData.get('email'));
-  console.log(formData.get('numberCode'));
+
+  for (const pair of formData.entries()) {
+    console.log(pair[0], pair[1]);
+    localStorage.setItem(pair[0], pair[1]);
+  }
+
+  window.open('/pages/landing/landing.html', '_self');
 }
