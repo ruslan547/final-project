@@ -22,6 +22,8 @@ body {
   --primary-midle-color: #828282;
   --toggle-btn-durk-color: #1b1b1b;
   --toggle-durk-color: #505050;
+  --strong: #302f2f;
+  --weak: #393838;
   --bg-range-color: rgba(189, 189, 189, .57);
   --shadow-toggle-light: 2px 4px 15px rgba(6, 12, 70, 0.15);
   --shadow-toggle-durk: 2px 4px 15px rgba(230, 230, 230, 0.15);

@@ -2737,27 +2737,38 @@ thead {
   color: var(--fg-title);
 }
 
+tfoot {
+  color: var(--fg-title);
+  text-align: right;
+}
+
 td {
   padding: 10px;
   vertical-align: top;
 }
 
-.table-links {
-  display: grid;
-  grid-template-columns: repeat(2, max-content);
-  column-gap: 6px;
-}
-
-.table-links__item .donate-link {
+table .donate-link {
   color: var(--fg-text);
 }
 
-.table-links__item .donate-link:hover,
-.table-links__item .watch-btn:hover {
+table .donate-link:hover,
+table .watch-btn:hover {
   transform: scale(1);
 }
 
-.table-links .donate-link,
-.table-links .watch-btn {
+table .donate-link,
+table .watch-btn {
   height: 16px;
+}
+
+.strong-cell {
+  background-color: var(--strong);
+}
+
+.weak-cell {
+  background-color: var(--weak);
+}
+
+.donate-cell {
+  background-color: var(--bg-testimoial-card);
 }
