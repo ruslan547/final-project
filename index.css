@@ -22,8 +22,10 @@ body {
   --primary-midle-color: #828282;
   --toggle-btn-durk-color: #1b1b1b;
   --toggle-durk-color: #505050;
-  --strong: #302f2f;
-  --weak: #393838;
+  --strong-light: #e8e8e8;
+  --weak-light: #fafafa;
+  --strong-dark: #302f2f;
+  --weak-dark: #393838;
   --bg-range-color: rgba(189, 189, 189, .57);
   --shadow-toggle-light: 2px 4px 15px rgba(6, 12, 70, 0.15);
   --shadow-toggle-durk: 2px 4px 15px rgba(230, 230, 230, 0.15);
@@ -52,6 +54,8 @@ body {
   --bg-border-avatar: var(--primary-durk-color);
   --bg-testimoial-card: var(--base-light-color);
   --shadow-popap: 0px 4px 24px rgba(0, 0, 0, 0.19);
+  --strong: var(--strong-light);
+  --weak: var(--weak-light);
 }
 
 :root[theme='durk'] {
@@ -69,6 +73,8 @@ body {
   --fg-pay-instruct: var(--primary-light-color);
   --bg-border-avatar: var(--base-light-color);
   --bg-testimoial-card: var(--dirty-color);
+  --strong: var(--strong-dark);
+  --weak: var(--weak-dark);
 }
 
 /*Title*/
