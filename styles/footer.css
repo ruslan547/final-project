@@ -271,8 +271,27 @@ input::-moz-placeholder {
   line-height: 16px;
 }
 
+.contact-form__clear {
+  cursor: pointer;
+  height: 16px;
+  padding: 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  color: var(--base-light-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: right;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .btn-container {
-  text-align: right;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 24px;
+  justify-content: end;
   padding-right: 15px;
 }
 

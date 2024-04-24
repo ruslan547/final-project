@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../../styles/footer.css">
   <title>ZOO online</title>
   <script src="../../js/theme-switcher.js"></script>
+  <script src="../../js/contact.js" defer></script>
 </head>
 
 <body>
@@ -894,17 +895,18 @@
           <a href="#" name="contact"></a>
           <form action="" class="contact-form">
             <h3 class="contact-form__title">Contact us</h3>
-            <input type="text" class="contact-form__name" placeholder="Name" required>
-            <input type="email" class="contact-form__email" placeholder="Email" required>
+            <input type="text" class="contact-form__name" placeholder="Name" required name="name">
+            <input type="email" class="contact-form__email" placeholder="Email" required name="email">
             <fieldset class="contact-form__fieldset">
               <legend class="contact-form__legend">Please enter your message</legend>
-              <textarea class="contact-form__textarea" name="" cols="35" rows="4" minlength="10" maxlength="280"
+              <textarea class="contact-form__textarea" name="message" cols="35" rows="4" minlength="10" maxlength="280"
                 required>
                 </textarea>
             </fieldset>
-            <input class="contact-form__checkbox" id="agreement" type="checkbox" required>
+            <input class="contact-form__checkbox" id="agreement" type="checkbox" required name="agreement">
             <label class="contact-form__label" for="agreement">I agree to the processing of Personal Data</label>
             <div class="btn-container">
+              <input class="contact-form__clear" type="button" value="CLEAR">
               <input class="contact-form__btn" type="submit" value="SEND">
             </div>
           </form>
